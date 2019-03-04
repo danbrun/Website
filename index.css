@@ -1,0 +1,78 @@
+:root {
+	color: #eeeeee;
+	font-size: 18px;
+
+	--text: #e0e0e0;
+	--primary: #43a047;
+	--article: #424242;
+	--background: #212121;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Ubuntu, monospace;
+}
+
+body {
+	background: var(--background);
+}
+
+.header {
+	color: var(--background);
+	background: var(--primary);
+}
+
+main > div {
+	width: 100%;
+	margin-bottom: 2rem;
+	background: var(--article);
+}
+
+article {
+	max-width: 40rem;
+	margin: auto;
+	padding: 1rem;
+}
+
+h1, h2, h3 {
+	color: var(--primary);
+}
+
+a {
+	color: var(--primary);
+}
+
+article > * {
+	margin: 0.5rem;
+}
+
+th, td {
+	padding-right: 0.5rem;
+	padding-bottom: 0.5rem;
+	text-align: left;
+	vertical-align: top;
+}
+
+svg g {
+	stroke-dasharray: 30;
+    animation-name: stroke;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes stroke {
+	0% {
+		stroke-dashoffset: 30;
+	}
+	25% {
+		stroke-dashoffset: 0;
+	}
+	75% {
+		stroke-dashoffset: 0;
+	}
+	to {
+		stroke-dashoffset: -30;
+	}
+}
