@@ -18,29 +18,55 @@ body {
 	background: var(--background);
 }
 
+.top-left, .top-right, .bottom-left, .bottom-right {
+	color: black;
+	width: 4rem;
+	width: 4rem;
+	position: fixed;
+}
+
+.top-left {
+	top: 0;
+	left: 0;
+}
+
+.top-right {
+	top: 0;
+	right: 0;
+	transform: rotate(90deg);
+}
+
+.bottom-left {
+	bottom: 0;
+	left: 0;
+	transform: rotate(270deg);
+}
+
+.bottom-right {
+	bottom: 0;
+	right: 0;
+	transform: rotate(180deg);
+}
+
 .header {
 	color: var(--background);
 	background: var(--primary);
 }
 
-main > div {
-	width: 100%;
+.header > article {
+	margin-top: 0;
 }
 
 article {
 	max-width: 40rem;
-	margin: 0 auto 2rem auto;
+	margin: 4rem auto;
 }
 
 article > * {
 	margin: 0.5rem;
 }
 
-h1, h2, h3 {
-	color: var(--primary);
-}
-
-a {
+a, h1, h2, h3 {
 	color: var(--primary);
 }
 
